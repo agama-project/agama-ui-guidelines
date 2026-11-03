@@ -22,10 +22,10 @@ structure](structure.md) come from that experience.
 
 ## At a glance
 
-- [No wizard](#no-wizard): from the first day, the user moves freely between
-  settings, most of them already set by the product's defaults.
 - [Timeline](#timeline): every change of interface, with the blog post and
   pull requests behind it.
+- [Not a wizard](#not-a-wizard): from the first day, the user moves freely
+  between settings, most of them already set by the product's defaults.
 - [One summary page](#2022-one-summary-page): a single page to read and
   change everything, until the settings outgrew it.
 - [A page per section](#2023-a-page-per-section): the summary became a hub,
@@ -37,7 +37,27 @@ structure](structure.md) come from that experience.
 - [Looking ahead](#looking-ahead): the current interface grows step by step,
   with these reasons in mind.
 
-## No wizard
+## Timeline
+
+| When | What changed | Sources |
+| --- | --- | --- |
+| Jan 2022 | D-Installer is announced with a web interface built on Chakra UI, and moves to PatternFly two weeks later | [blog](https://agama-project.github.io/blog/2022/01/18/announcing-d-installer), [#15](https://github.com/agama-project/agama/pull/15) |
+| Mar 2022 | **One summary page**: a single-column, mobile-first layout with the Installation Summary as the starting point | [#44](https://github.com/agama-project/agama/pull/44), [blog](https://agama-project.github.io/blog/2022/03/31/first-public-release) |
+| Jan 2023 | A sidebar behind a hamburger menu, first to hold the download of logs | [#379](https://github.com/agama-project/agama/pull/379), [blog](https://agama-project.github.io/blog/2023/02/16/d-installer-0-7) |
+| Mar 2023 | **A page per section**: each area moves out of the summary into its own page | [#443](https://github.com/agama-project/agama/pull/443), [blog](https://agama-project.github.io/blog/2023/03/30/d-installer-0-8) |
+| Apr 2023 | The options of each page move from the sidebar to a menu in the header | [#545](https://github.com/agama-project/agama/pull/545) |
+| Jan 2024 | The issues page goes away, and each section shows its own issues | [#886](https://github.com/agama-project/agama/pull/886) |
+| May 2024 | Agama 8 no longer runs inside Cockpit, and gets its own HTTP API | [blog](https://agama-project.github.io/blog/2024/05/17/agama-8) |
+| Jun 2024 | **A navigation sidebar**: the interface is remade on PatternFly, with a sidebar to move between sections | [#1202](https://github.com/agama-project/agama/pull/1202), [blog](https://agama-project.github.io/blog/2024/06/28/agama-9) |
+| Oct 2024 | "Install" moves to the header, reachable from every page | [#1690](https://github.com/agama-project/agama/pull/1690), [blog](https://agama-project.github.io/blog/2025/01/21/Agama-11) |
+| Nov 2024 | "Install" is always available, and shows what blocks the installation when something does | [#1778](https://github.com/agama-project/agama/pull/1778) |
+| Feb 2025 | PatternFly 6 and a new look | [#2033](https://github.com/agama-project/agama/pull/2033), [blog](https://agama-project.github.io/blog/2025/02/27/releasing-version-12-and-a-roadmap) |
+| Jan 2026 | **The overview as the hub**: a useful overview and a richer confirmation, then the sidebar goes away in favor of breadcrumbs | [#2988](https://github.com/agama-project/agama/pull/2988), [#3009](https://github.com/agama-project/agama/pull/3009), [blog](https://agama-project.github.io/blog/2026/03/20/agama-19) |
+| Jun 2026 | The header shows the product on every page, the breadcrumb starts at "Installation", and the installer tools are in reach everywhere | [#3607](https://github.com/agama-project/agama/pull/3607), [blog](https://agama-project.github.io/blog/2026/06/16/agama-22) |
+| Jun 2026 | Dark and high contrast appearances, and products can restyle the installer | [#3604](https://github.com/agama-project/agama/pull/3604), [blog](https://agama-project.github.io/blog/2026/08/11/dressed-for-success) |
+| Sep 2026 | A terminal docked at the bottom of the window | [#3622](https://github.com/agama-project/agama/pull/3622), [#3868](https://github.com/agama-project/agama/pull/3868), [blog](https://agama-project.github.io/blog/2026/10/21/agama-25) |
+
+## Not a wizard
 
 Agama has never been a wizard, and that is on purpose. A wizard walks everyone
 through every step in a fixed order. Agama starts from a proposal built on the
@@ -60,26 +80,6 @@ Some choices have no good default, because they belong to the user and not
 to the product, such as how to log in to the new system. Agama leaves those
 to the user on purpose, and the summary says what is still missing, so they
 are the only settings everyone has to visit before installing.
-
-## Timeline
-
-| When | What changed | Sources |
-| --- | --- | --- |
-| Jan 2022 | D-Installer is announced with a web interface built on Chakra UI, and moves to PatternFly two weeks later | [blog](https://agama-project.github.io/blog/2022/01/18/announcing-d-installer), [#15](https://github.com/agama-project/agama/pull/15) |
-| Mar 2022 | **One summary page**: a single-column, mobile-first layout with the Installation Summary as the starting point | [#44](https://github.com/agama-project/agama/pull/44), [blog](https://agama-project.github.io/blog/2022/03/31/first-public-release) |
-| Jan 2023 | A sidebar behind a hamburger menu, first to hold the download of logs | [#379](https://github.com/agama-project/agama/pull/379), [blog](https://agama-project.github.io/blog/2023/02/16/d-installer-0-7) |
-| Mar 2023 | **A page per section**: each area moves out of the summary into its own page | [#443](https://github.com/agama-project/agama/pull/443), [blog](https://agama-project.github.io/blog/2023/03/30/d-installer-0-8) |
-| Apr 2023 | The options of each page move from the sidebar to a menu in the header | [#545](https://github.com/agama-project/agama/pull/545) |
-| Jan 2024 | The issues page goes away, and each section shows its own issues | [#886](https://github.com/agama-project/agama/pull/886) |
-| May 2024 | Agama 8 no longer runs inside Cockpit, and gets its own HTTP API | [blog](https://agama-project.github.io/blog/2024/05/17/agama-8) |
-| Jun 2024 | **A navigation sidebar**: the interface is remade on PatternFly, with a sidebar to move between sections | [#1202](https://github.com/agama-project/agama/pull/1202), [blog](https://agama-project.github.io/blog/2024/06/28/agama-9) |
-| Oct 2024 | "Install" moves to the header, reachable from every page | [#1690](https://github.com/agama-project/agama/pull/1690), [blog](https://agama-project.github.io/blog/2025/01/21/Agama-11) |
-| Nov 2024 | "Install" is always available, and shows what blocks the installation when something does | [#1778](https://github.com/agama-project/agama/pull/1778) |
-| Feb 2025 | PatternFly 6 and a new look | [#2033](https://github.com/agama-project/agama/pull/2033), [blog](https://agama-project.github.io/blog/2025/02/27/releasing-version-12-and-a-roadmap) |
-| Jan 2026 | **The overview as the hub**: a useful overview and a richer confirmation, then the sidebar goes away in favor of breadcrumbs | [#2988](https://github.com/agama-project/agama/pull/2988), [#3009](https://github.com/agama-project/agama/pull/3009), [blog](https://agama-project.github.io/blog/2026/03/20/agama-19) |
-| Jun 2026 | The header shows the product on every page, the breadcrumb starts at "Installation", and the installer tools are in reach everywhere | [#3607](https://github.com/agama-project/agama/pull/3607), [blog](https://agama-project.github.io/blog/2026/06/16/agama-22) |
-| Jun 2026 | Dark and high contrast appearances, and products can restyle the installer | [#3604](https://github.com/agama-project/agama/pull/3604), [blog](https://agama-project.github.io/blog/2026/08/11/dressed-for-success) |
-| Sep 2026 | A terminal docked at the bottom of the window | [#3622](https://github.com/agama-project/agama/pull/3622), [#3868](https://github.com/agama-project/agama/pull/3868), [blog](https://agama-project.github.io/blog/2026/10/21/agama-25) |
 
 ## 2022: One summary page
 
