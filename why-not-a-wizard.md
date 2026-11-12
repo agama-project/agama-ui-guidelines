@@ -91,9 +91,9 @@ deeper is part of the task, not a detour from it.
 A wizard can still make room for that, but every way of doing it asks something
 of the user:
 
-- **One big step.** Everything goes on a single screen. The novice faces options
-  they cannot answer, and the expert has to dig through a crowded screen to find
-  the one they came for.
+- **One big step.** Everything goes on a single screen, too much for those who
+  only want the basics and too crowded for those looking for one specific
+  option.
 - **Steps inside a step.** The area becomes a small wizard of its own, and Back
   and Next start to mean two things: the previous screen of the area, or the
   previous step of the installation?
