@@ -146,7 +146,7 @@ Agama puts that effort into the overview instead. It does not lay out every
 option of every area: each area gets a short summary of its most important
 settings, as brief and clear as possible. That is enough to see what is going to
 happen. When something needs a change, the area's page shows more, and every
-level below it, such as a connection, a device or a form, shows a bit more
+level below it, such as a connection, a disk or a form, shows a bit more
 again. Nobody faces every option at once. Keeping those summaries short and
 still useful is the hard part, and it is the part worth getting right.
 
