@@ -461,10 +461,9 @@ looking at": the page stays in use.
   keys highlight one again.
   *Why:* while an option is highlighted, some screen readers stop reading
   what is deleted or where the cursor moves.
-- **Text that matches no option is cleared when focus leaves a combobox that
-  only takes its options.** A combobox that also takes new values keeps the
-  text as a value.
-  *Why:* the text is a search, not a value, and the field should show only
+- **A combobox that only takes its options clears text that matches none of
+  them when focus leaves.**
+  *Why:* that text is a search, not a value, and the field should show only
   what the form will submit. This follows the default behaviour of
   [React Aria's ComboBox][ra-combobox-component] and
   [MUI's Autocomplete][mui-autocomplete], which both discard uncommitted
