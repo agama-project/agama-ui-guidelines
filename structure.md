@@ -461,6 +461,16 @@ looking at": the page stays in use.
   keys highlight one again.
   *Why:* while an option is highlighted, some screen readers stop reading
   what is deleted or where the cursor moves.
+- **Text that matches no option is cleared when focus leaves a combobox that
+  only takes its options.** A combobox that also takes new values keeps the
+  text as a value.
+  *Why:* the text is a search, not a value, and the field should show only
+  what the form will submit. This follows the default behaviour of
+  [React Aria's ComboBox][ra-combobox-component] and
+  [MUI's Autocomplete][mui-autocomplete], which both discard uncommitted
+  input when custom values are not allowed. GOV.UK's
+  [accessible-autocomplete][govuk-autocomplete] keeps the text and reports it
+  on submit, which would mean validating something the form does not hold.
 - **An option in a list or a menu holds only text and icons.** A row that
   needs its own buttons belongs in a grid, not in a list.
   *Why:* a button inside an option breaks moving through the list, with the
@@ -711,7 +721,10 @@ Then try it with the keyboard alone, with a screen reader, and at 400% zoom.
 [pf-modal]: https://www.patternfly.org/components/modal/design-guidelines "PatternFly Modal design guidelines"
 [pf-punctuation]: https://www.patternfly.org/content-design/grammar/punctuation "PatternFly Punctuation"
 [pf-tooltip]: https://www.patternfly.org/components/tooltip/design-guidelines "PatternFly Tooltip design guidelines"
+[govuk-autocomplete]: https://github.com/alphagov/accessible-autocomplete "GOV.UK accessible-autocomplete"
+[mui-autocomplete]: https://mui.com/material-ui/api/autocomplete/#autocomplete-prop-clearOnBlur "MUI Autocomplete clearOnBlur"
 [ra-combobox]: https://react-aria.adobe.com/blog/building-a-combobox "Creating an accessible autocomplete experience"
+[ra-combobox-component]: https://react-aria.adobe.com/ComboBox "React Aria ComboBox"
 [ra-forms]: https://react-aria.adobe.com/forms "React Aria Forms"
 [ra-listbox]: https://react-aria.adobe.com/ListBox "React Aria ListBox"
 [ra-toast]: https://react-aria.adobe.com/Toast "React Aria Toast"
