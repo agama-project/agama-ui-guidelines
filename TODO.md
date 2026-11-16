@@ -15,7 +15,8 @@ until the team agrees with it, or is removed from the pages if not.
 - [ ] Tooltips show on focus, close with Escape, and use the control's name
   (structure, The header).
 - [ ] The browser tab names the page (structure, Pages).
-- [ ] Help and errors are tied to their field (structure, Forms and Words).
+- [ ] Help and errors are tied to their field (structure, Forms; words,
+  Agama's own rules).
 - [ ] Focus goes somewhere sensible when the opener is gone (structure, Pages,
   side panels and dialogs).
 - [ ] Questions that must be answered are alert dialogs (structure, Dialogs).
@@ -24,7 +25,7 @@ until the team agrees with it, or is removed from the pages if not.
 - [ ] A side panel that covers the page behaves as a dialog (structure,
   Screen sizes).
 - [ ] The recipes check at 400% zoom (structure, Recipes).
-- [ ] A control that shows more names what it shows (structure, Words).
+- [ ] A control that shows more names what it shows (words, Agama's own rules).
   Added after the first team feedback.
 - [ ] Agama may set its own rule over PatternFly or other guidance when it
   serves users better in an installer, never at the cost of a standard, and
@@ -66,8 +67,8 @@ Claims in the guidelines that still need checking.
   (structure, Feedback): check the code follows them.
 - [ ] "The header keeps the same height on every page" (structure, The
   header): check it, including the minimal layout's empty header.
-- [ ] "A control's accessible name includes its visible label, word for
-  word" (structure, Words): comes from notes only, look for controls whose
+- [ ] "A control's accessible name includes its visible label, word for word"
+  (words, Agama's own rules): comes from notes only, look for controls whose
   `aria-label` replaces or rewords the visible text.
 - [ ] "Words say the same thing, both on the screen and to the screen reader"
   (principles, 2): look for meaning carried by color, such as a status or an
@@ -79,9 +80,9 @@ Claims in the guidelines that still need checking.
   check that PatternFly's high contrast theme does reach 7:1.
 - [ ] "The tooltip shows on hover and on keyboard focus, and Escape hides it"
   (structure, The header): check the header's icon buttons.
-- [ ] Help and errors tied to their field (structure, Forms and Words):
-  check that every field's help and error reach screen readers with the
-  field, not only in `ArrayField`, `SearchableSelectField` and
+- [ ] Help and errors tied to their field (structure, Forms; words, Agama's
+  own rules): check that every field's help and error reach screen readers
+  with the field, not only in `ArrayField`, `SearchableSelectField` and
   `MultiSelectField`.
 - [ ] "A button that sends something keeps the focus while it waits"
   (principles, 3): check what happens to focus on a submit button that
@@ -176,10 +177,11 @@ Claims in the guidelines that still need checking.
   `sticky-`, `proposal-` and others, about 13 on master).
 - [ ] Remove the unused `core/RowActions`, the only row menu with vertical
   dots.
-- [ ] Make every form's errors say what is wrong with each field (structure,
-  Words): add an example to network's format errors, and give localization
-  one message per field once the string freeze ends. iSCSI's errors sit in
-  one alert above the form, and get fixed with its migration below.
+- [ ] Make every form's errors say what is wrong with each field (words,
+  Agama's own rules): add an example to network's format errors, and give
+  localization one message per field once the string freeze ends. iSCSI's
+  errors sit in one alert above the form, and get fixed with its migration
+  below.
 - [ ] Name the browser tab after the page ("Storage · Agama"), which is
   "Agama" on every page today (`web/src/index.html`). Then drop *(planned)*
   from that rule (structure, Pages).
@@ -195,10 +197,10 @@ Claims in the guidelines that still need checking.
   encryption, LVM, space policy). Make the full list first.
 - [ ] Once the ESLint `translated-prop` rule lands, mention it in the
   Translations section of guidelines.md.
-- [ ] Drop the final period from "Could not authenticate against the
-  server.", the login page's error title (`core/LoginPage.tsx`), the one
-  title on master that still ends in one (structure, Words). It changes a
-  translated string, so it waits for any string freeze to end.
+- [ ] Drop the final period from "Could not authenticate against the server.",
+  the login page's error title (`core/LoginPage.tsx`), the one title on master
+  that still ends in one (words, Agama's own rules). It changes a translated
+  string, so it waits for any string freeze to end.
 
 ## Ideas
 
