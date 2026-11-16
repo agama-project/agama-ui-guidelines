@@ -24,8 +24,7 @@ The shape of the interface, and the reason behind each part. It applies
   says why it is empty, and one place makes the announcements.
 - [Keyboard and focus](#keyboard-and-focus): the arrow keys move around,
   Enter or Space picks, and focus never jumps on its own.
-- [Words](#words): buttons say what they do, reports what will happen, links
-  where they go, all in plain words that translate well.
+- [Words](#words): they have [their own page](words.md).
 - [Appearance](#appearance): how loud something looks matches how much it
   matters, a status is said in words that screen readers read too, with
   color only backing them, and contrast is AA.
@@ -517,53 +516,8 @@ See also React Aria on [building a combobox][ra-combobox] and
 
 ## Words
 
-- **Short labels inside a form, full ones on their own.** "Name", not
-  "Connection name", inside a connection form. Breadcrumbs, links and row
-  buttons name their object: "Edit connection", "Configure sda".
-- **Controls instruct, reports describe:** "Delete" on the button, "To be
-  deleted" in the report, never worded as already done. Each act has one verb
-  and one noun everywhere ("actions", never "changes").
-- **A link is named after where it goes,** not after what it reports: "Go to
-  storage settings" on an alert about storage, not "Invalid settings". Danger
-  color goes on the statement, not on the link.
-- **A control that shows more names what it shows:** "Show technical
-  details", "Show 3 subvolume actions". Avoid a bare "Show more" wherever
-  possible: a screen reader user moving from control to control hears it
-  with no context, and can't tell several of them apart.
-- **Every place a sentence names is a link to it,** like "Uses" and "Used by"
-  between devices.
-- **Repeat only when it helps:** to keep the user oriented (a side panel
-  repeats the name of its row), to spare remembering (a summary in the list,
-  the details in the panel), or for a different task. Repetition hurts when
-  it adds noise, shows one action twice, can drift out of sync, or makes a
-  screen reader say the same thing twice. No intro paragraph restates the
-  table below it.
-- **Error messages say what is wrong with that field,** next to it, and are
-  tied to it so a screen reader reads them with the field. "Required" and
-  "wrong format" are different messages, and a format error shows an example
-  ("e.g. 20 GiB"). The label, the help and the errors use the same word.
-- **A control's accessible name includes its visible label, word for word,**
-  so voice control finds it by what the user sees. Added context, such as
-  "Hostname" in "Hostname mode", goes around the label, never in place of
-  it.
-- **Plain words, not symbols or internals.** "At least 5 GiB", not "≥". No
-  internal names ("space policy"). Outcomes rather than mechanisms. Never
-  "the control below".
-- **Text in another language is marked with its language,** such as each
-  entry in the language list.
-- **Sentence case.** Whole sentences, never stitched together from pieces.
-- **Titles don't end in a period.** Headings, dialog titles and alert titles
-  alike. A question mark stays when it matters.
-- **A note for translators on every string:** what it is, and where it shows
-  up.
-- **A string freeze is never dodged by reusing a string from another
-  context.** A string is reused only where it means the same thing in the
-  same place. New text waits, tracked as a follow-up, and strings that will be
-  needed are reserved early.
-
-*Standards:* WCAG [1.3.3], [2.4.4], [2.5.3], [3.1.2], [3.3.1], [3.3.3];
-PatternFly [Punctuation][pf-punctuation]. See also Sara Soueidan on
-[text labels][ss-labels].
+How Agama writes its text, and where its wording rules come from, has
+[its own page](words.md).
 
 ## Appearance
 
@@ -669,7 +623,6 @@ Then try it with the keyboard alone, with a screen reader, and at 400% zoom.
 
 [1.3.1]: https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships.html "Info and Relationships"
 [1.3.2]: https://www.w3.org/WAI/WCAG22/Understanding/meaningful-sequence.html "Meaningful Sequence"
-[1.3.3]: https://www.w3.org/WAI/WCAG22/Understanding/sensory-characteristics.html "Sensory Characteristics"
 [1.3.4]: https://www.w3.org/WAI/WCAG22/Understanding/orientation.html "Orientation"
 [1.4.1]: https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html "Use of Color"
 [1.4.3]: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html "Contrast (Minimum)"
@@ -682,15 +635,11 @@ Then try it with the keyboard alone, with a screen reader, and at 400% zoom.
 [2.3.3]: https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions.html "Animation from Interactions (AAA)"
 [2.4.2]: https://www.w3.org/WAI/WCAG22/Understanding/page-titled.html "Page Titled"
 [2.4.3]: https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html "Focus Order"
-[2.4.4]: https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context.html "Link Purpose (In Context)"
 [2.4.6]: https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels.html "Headings and Labels"
 [2.4.11]: https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum.html "Focus Not Obscured (Minimum)"
 [2.5.3]: https://www.w3.org/WAI/WCAG22/Understanding/label-in-name.html "Label in Name"
-[3.1.2]: https://www.w3.org/WAI/WCAG22/Understanding/language-of-parts.html "Language of Parts"
 [3.2.2]: https://www.w3.org/WAI/WCAG22/Understanding/on-input.html "On Input"
-[3.3.1]: https://www.w3.org/WAI/WCAG22/Understanding/error-identification.html "Error Identification"
 [3.3.2]: https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions.html "Labels or Instructions"
-[3.3.3]: https://www.w3.org/WAI/WCAG22/Understanding/error-suggestion.html "Error Suggestion"
 [3.3.4]: https://www.w3.org/WAI/WCAG22/Understanding/error-prevention-legal-financial-data.html "Error Prevention (Legal, Financial, Data)"
 [4.1.2]: https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html "Name, Role, Value"
 [4.1.3]: https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html "Status Messages"
@@ -702,14 +651,12 @@ Then try it with the keyboard alone, with a screen reader, and at 400% zoom.
 [ss-listings]: https://www.sarasoueidan.com/blog/keyboard-friendlier-article-listings/ "Optimizing keyboard navigation using tabindex and ARIA"
 [ss-live-1]: https://www.sarasoueidan.com/blog/accessible-notifications-with-aria-live-regions-part-1/ "Accessible notifications with ARIA Live Regions (Part 1)"
 [ss-live-2]: https://www.sarasoueidan.com/blog/accessible-notifications-with-aria-live-regions-part-2/ "Accessible notifications with ARIA Live Regions (Part 2)"
-[ss-labels]: https://www.sarasoueidan.com/blog/accessible-text-labels/ "Accessible Text Labels For All"
 [pf-alert]: https://www.patternfly.org/components/alert/design-guidelines "PatternFly Alert design guidelines"
 [pf-breadcrumb]: https://www.patternfly.org/components/breadcrumb/design-guidelines "PatternFly Breadcrumb design guidelines"
 [pf-dropdown]: https://www.patternfly.org/components/menus/dropdown/design-guidelines "PatternFly Dropdown design guidelines"
 [pf-empty-state]: https://www.patternfly.org/components/empty-state/design-guidelines "PatternFly Empty state design guidelines"
 [pf-label]: https://www.patternfly.org/components/label/design-guidelines "PatternFly Label design guidelines"
 [pf-modal]: https://www.patternfly.org/components/modal/design-guidelines "PatternFly Modal design guidelines"
-[pf-punctuation]: https://www.patternfly.org/content-design/grammar/punctuation "PatternFly Punctuation"
 [pf-tooltip]: https://www.patternfly.org/components/tooltip/design-guidelines "PatternFly Tooltip design guidelines"
 [ra-combobox]: https://react-aria.adobe.com/blog/building-a-combobox "Creating an accessible autocomplete experience"
 [ra-forms]: https://react-aria.adobe.com/forms "React Aria Forms"

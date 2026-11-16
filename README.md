@@ -23,7 +23,8 @@ Agama follow them, in [TODO](TODO.md).
 | Page | What it covers |
 | --- | --- |
 | [Principles](principles.md) | The rules every part of the UI follows, and why |
-| [Structure](structure.md) | How the UI is put together, from the summary and the header to forms, side panels, dialogs and words, with recipes for common additions |
+| [Structure](structure.md) | How the UI is put together, from the summary and the header to forms, side panels and dialogs, with recipes for common additions |
+| [Words](words.md) | How Agama writes its text, the sources its wording follows, and the terms it never uses |
 | [Technical guidelines](guidelines.md) | How to build it: translations, styling, and the docs and components that answer recurring questions |
 | [Open questions](open-questions.md) | What is deliberately left undecided |
 | [What is left to do](TODO.md) | The claims still to check against the code, and the changes in Agama that make the planned rules true |
