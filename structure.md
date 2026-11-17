@@ -464,7 +464,7 @@ looking at": the page stays in use.
 - **A combobox that only takes its options clears text that matches none of
   them when focus leaves.**
   *Why:* that text is a search, not a value, and the field should show only
-  what the form will submit. This follows the default behaviour of
+  what the form will submit. This follows the default behavior of
   [React Aria's ComboBox][ra-combobox-component] and
   [MUI's Autocomplete][mui-autocomplete], which both discard uncommitted
   input when custom values are not allowed. GOV.UK's
