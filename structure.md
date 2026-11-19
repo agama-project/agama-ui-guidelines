@@ -545,10 +545,13 @@ How Agama writes its text, and where its wording rules come from, has
   the brand changes.
 - **Contrast is AA:** 4.5:1 for text, and 3:1 for large text and for the
   icons, borders and focus rings needed to see a control or its state. Muted
-  and disabled text get 4.5:1 too, which is stricter than WCAG asks. High
-  contrast is PatternFly's AAA theme, and no branding overrides it.
+  and disabled text get 4.5:1 too, which is stricter than WCAG asks. The
+  ratio holds on every background the text can sit on, the highlight of a
+  hovered, focused or selected row included. High contrast is PatternFly's
+  AAA theme, and no branding overrides it.
   *Why:* AAA in the default themes would flatten the visual hierarchy, and
-  the high contrast setting exists for users who need more.
+  the high contrast setting exists for users who need more. A grey checked
+  only against the page can fall below 4.5:1 as soon as its row lights up.
 - **Reduced motion is respected:** when the operating system is set to
   reduce motion, nothing slides, fades or spins.
 - **Supported browsers:** Firefox, the browser on the ISO, and current
