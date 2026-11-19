@@ -548,7 +548,7 @@ How Agama writes its text, and where its wording rules come from, has
   and disabled text get 4.5:1 too, which is stricter than WCAG asks. The
   ratio holds on every background the text can sit on, the highlight of a
   hovered, focused or selected row included. High contrast is PatternFly's
-  AAA theme, and no branding overrides it.
+  AAA theme, and no branding should override it.
   *Why:* AAA in the default themes would flatten the visual hierarchy, and
   the high contrast setting exists for users who need more. A grey checked
   only against the page can fall below 4.5:1 as soon as its row lights up.
