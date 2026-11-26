@@ -79,6 +79,34 @@ A wizard puts every area on everyone's path. The novice faces screens they
 cannot answer, and the expert walks through screens they do not need to reach
 the one they came for.
 
+## Some areas are hard to fit in a step
+
+A wizard step works best as one screen with one question: pick a language, pick
+a time zone, Next. Some areas are not like that. Setting up storage, for
+example, means going from the list of disks to one of them, then to its
+partitions, and then to the settings of one partition. Network is similar: from
+the list of connections to one connection, and then to its settings. Going
+deeper is part of the task, not a detour from it.
+
+A wizard can still make room for that, but every way of doing it asks something
+of the user:
+
+- **One big step.** Everything goes on a single screen, too much for those who
+  only want the basics and too crowded for those looking for one specific
+  option.
+- **Steps inside a step.** The area becomes a small wizard of its own, and Back
+  and Next start to mean two things: the previous screen of the area, or the
+  previous step of the installation?
+- **A way out of the step.** A button opens a separate tool, and the wizard
+  waits on its Next button until the user comes back. YaST did that with its
+  Expert Partitioner, a whole application launched from the partitioning step.
+  It works, but while the user is there, the wizard is not leading anything.
+
+Agama tries to keep all of that out of the way until it is needed. Someone
+happy with what is proposed stays at the surface, and someone who needs a
+specific setup goes as deep as they want, in the same way in every area and for
+every product.
+
 ## A wizard with shortcuts
 
 A wizard does not have to be strict. YaST lets the user jump from its final
@@ -118,7 +146,7 @@ Agama puts that effort into the overview instead. It does not lay out every
 option of every area: each area gets a short summary of its most important
 settings, as brief and clear as possible. That is enough to see what is going to
 happen. When something needs a change, the area's page shows more, and every
-level below it, such as a connection, a device or a form, shows a bit more
+level below it, such as a connection, a disk or a form, shows a bit more
 again. Nobody faces every option at once. Keeping those summaries short and
 still useful is the hard part, and it is the part worth getting right.
 
